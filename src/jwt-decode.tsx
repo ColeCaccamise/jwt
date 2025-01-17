@@ -24,7 +24,7 @@ function decodeJWT(token: string) {
 export default function Command() {
   const [token, setToken] = useState("");
   const [showDecoded, setShowDecoded] = useState(false);
-  const [decodedToken, setDecodedToken] = useState<any>(null);
+  const [decodedToken, setDecodedToken] = useState(null);
 
   useEffect(() => {
     async function checkClipboard() {
@@ -82,7 +82,7 @@ ${decodedToken.signature}
           <ActionPanel>
             <ActionPanel.Section>
               <Action
-                title="Decode Another JWT"
+                title="Decode Another Jwt"
                 onAction={() => {
                   setShowDecoded(false);
                   setToken("");
@@ -109,7 +109,7 @@ ${decodedToken.signature}
     <Form
       actions={
         <ActionPanel>
-          <Action.SubmitForm title="Decode JWT" onSubmit={handleSubmit} />
+          <Action.SubmitForm title="Decode Jwt" onSubmit={handleSubmit} />
         </ActionPanel>
       }
     >

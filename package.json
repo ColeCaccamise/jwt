@@ -2,15 +2,19 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "jwt",
   "title": "JWT",
-  "description": "",
+  "description": "A Raycast extension to decode and inspect JWT tokens.",
   "icon": "extension-icon.png",
   "author": "user_fecd0ccf6927f61b7898",
+  "categories": [
+    "Developer Tools"
+  ],
+  "access": "public",
   "license": "MIT",
   "commands": [
     {
       "name": "jwt-decode",
       "title": "JWT Decode",
-      "description": "",
+      "description": "Decode and inspect a JWT token.",
       "mode": "view"
     }
   ],
